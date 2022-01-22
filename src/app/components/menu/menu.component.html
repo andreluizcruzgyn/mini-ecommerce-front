@@ -7,25 +7,25 @@
     <mat-icon matBadge="{{itensNoCarrinho}}" matBadgeColor="primary">shopping_cart</mat-icon>
   </button>
 
-  <button mat-button [matMenuTriggerFor]="beforeMenu">
-    <mat-icon>account_circle</mat-icon>
-  </button>
-  <mat-menu #beforeMenu="matMenu" xPosition="before">
-    <button
-      mat-menu-item
-      *ngIf="isUserLogado"
-      (click)="handleLogin()"
-    >Login</button>
+<!--  <button mat-button [matMenuTriggerFor]="beforeMenu">-->
+<!--    <mat-icon>account_circle</mat-icon>-->
+<!--  </button>-->
+<!--  <mat-menu #beforeMenu="matMenu" xPosition="before">-->
+<!--    <button-->
+<!--      mat-menu-item-->
+<!--      *ngIf="isUserLogado"-->
+<!--      (click)="handleLogin()"-->
+<!--    >Login</button>-->
 
-    <button
-      mat-menu-item
-      *ngIf="!isUserLogado"
-      (click)="handleProfilePage()"
-    >Perfil</button>
+<!--    <button-->
+<!--      mat-menu-item-->
+<!--      *ngIf="!isUserLogado"-->
+<!--      (click)="handleProfilePage()"-->
+<!--    >Perfil</button>-->
 
-    <button
-      mat-menu-item
-      (click)="sair()"
-    >Sair</button>
-  </mat-menu>
+<!--    <button-->
+<!--      mat-menu-item-->
+<!--      (click)="sair()"-->
+<!--    >Sair</button>-->
+<!--  </mat-menu>-->
 </mat-toolbar>
